@@ -2,6 +2,7 @@ import './App.css';
 import Homepage from './page/homepage/homepage.component';
 import { Route, Routes } from "react-router";
 import Shop from './page/shop/shop.components'
+import Header from './components/header/header.component'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 
   return (
           <div>
+            <Header/>
             <Routes>
               <Route index path="/" element={<Homepage/>}/>
               <Route path="shop" element={<Shop/>}/>
