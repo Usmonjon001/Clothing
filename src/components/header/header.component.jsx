@@ -6,7 +6,7 @@ import Logo from '../../assets/loog.svg'
 export default class Header extends Component {
     render() {
         return (
-            <div class="header">
+            <div className="header">
                 <Link to="/" className="logo-container">
                     <img src={Logo} alt="logo" className="logo"/>
                 </Link>
@@ -14,7 +14,7 @@ export default class Header extends Component {
                 <div className="options">
                     <Link className="option" to="/shop">Shop</Link>
                     <Link className="option" to="/">Contact</Link>
-                    <Link className="option" to="/">Sign In</Link>
+                    <Link className="option" to="/signIn">Sign In</Link>
                 </div>
             </div>
         )

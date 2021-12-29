@@ -3,16 +3,9 @@ import Homepage from './page/homepage/homepage.component';
 import { Route, Routes } from "react-router";
 import Shop from './page/shop/shop.components'
 import Header from './components/header/header.component'
+import SignInAndSignUp from './page/sign-in-and-sign-up/sign-in-and-sign-up'
 
 function App() {
-
-  const HatsPage = () =>{
-    return(
-      <div>
-        <h1>This is Hats Page...</h1>
-      </div>
-    )
-  }
 
   return (
           <div>
@@ -20,7 +13,7 @@ function App() {
             <Routes>
               <Route index path="/" element={<Homepage/>}/>
               <Route path="shop" element={<Shop/>}/>
-              
+              <Route path="signIn" element={<SignInAndSignUp/>}/>
             </Routes>
           </div>
   );
